@@ -206,3 +206,23 @@
 [2023-02-18T12:02:19.493] [ERROR] default - Error al eliminar producto Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 [2023-02-18T12:03:04.349] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 [2023-02-18T12:03:04.671] [ERROR] default - Error al eliminar producto Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-15T17:52:32.092] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:22.649] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:24.794] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:25.481] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:26.081] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:54:05.750] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:14.335] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:16.434] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:16.865] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.057] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.249] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.449] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.619] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.802] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.992] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.176] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.369] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.555] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.719] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T18:35:19.938] [ERROR] default - Error al cargar los productos TypeError: Cannot read properties of undefined (reading 'json')
