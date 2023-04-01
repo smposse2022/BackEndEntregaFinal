@@ -26,10 +26,9 @@ app.use(
   session({
     //definimos el session store
     store: MongoStore.create({
-      mongoUrl:
-        "mongodb+srv://smposse23:hotdog2023@cluster0.qfa6yph.mongodb.net/ecommerce?retryWrites=true&w=majority",
+      mongoUrl: process.env.MONGO_URL,
     }),
-    secret: "claveSecreta",
+    secret: process.env.MONGO_SESSIONS_CLAVE,
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -42,8 +41,9 @@ app.use(
 app.use(passport.initialize()); //conectamos a passport con express.
 app.use(passport.session()); //vinculacion entre passport y las sesiones de nuestros usuarios.
 
-const PORT = objArguments.PORT;
-const MODO = objArguments.mode;
+const PORT = process.env.PORT || objArguments.PORT;
+const MODO = process.env.MODE || objArguments.MODE;
+const ENV = process.env.NODE_ENV;
 
 // lógica Modos Fork y Cluster
 if (MODO == "CLUSTER" && cluster.isPrimary) {
@@ -60,7 +60,9 @@ if (MODO == "CLUSTER" && cluster.isPrimary) {
 } else {
   //servidor de express
   const server = app.listen(PORT, () =>
-    logger.info(`listening on port ${PORT} on process ${process.pid}`)
+    logger.info(
+      `listening on port ${PORT} on process ${process.pid} in env ${ENV} with mode ${MODO}`
+    )
   );
 }
 

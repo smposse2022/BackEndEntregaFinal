@@ -71,3 +71,4 @@
 [2023-03-31T22:46:49.481] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'id')
 [2023-03-31T23:15:21.433] [ERROR] default - Error al eliminar todos los carritos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 [2023-03-31T23:19:46.225] [ERROR] default - Error al eliminar el producto TypeError: Cannot read properties of undefined (reading 'products')
+[2023-04-01T08:22:00.038] [ERROR] default - Hubo un error Error: Authenticate

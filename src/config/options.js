@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import ParsedArgs from "minimist";
 // Minimist
 const optionsMinimist = {
-  default: { p: 8080, m: "FORK", env: "DEV" },
+  default: { p: 8080, m: "FORK", e: "development" },
   alias: { p: "PORT", m: "MODE", e: "ENV" },
 };
 export const objArguments = ParsedArgs(process.argv.slice(2), optionsMinimist);
@@ -12,12 +12,16 @@ export const objArguments = ParsedArgs(process.argv.slice(2), optionsMinimist);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-dotenv.config();
+const NODE_ENV = objArguments.ENV;
+
+dotenv.config({
+  path: `.env.${NODE_ENV}`,
+});
 
 export const options = {
   server: {
-    PORT: objArguments.PORT,
-    MODE: objArguments.MODE,
+    PORT: process.env.PORT,
+    MODE: process.env.MODE,
     DBTYPE: process.env.DBTYPE || "mongo",
   },
   mongo: {
