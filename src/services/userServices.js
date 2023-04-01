@@ -24,6 +24,14 @@ export const saveUser = async (body) => {
   }
 };
 
+export const updateUser = async (body, id) => {
+  try {
+    return await UsersDaoContainer.updateById(body, id);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
 export const deleteUser = async (userId) => {
   try {
     return await UsersDaoContainer.deleteById(userId);

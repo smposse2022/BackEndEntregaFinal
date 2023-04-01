@@ -226,3 +226,26 @@
 [2023-03-15T17:58:18.555] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
 [2023-03-15T17:58:18.719] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
 [2023-03-15T18:35:19.938] [ERROR] default - Error al cargar los productos TypeError: Cannot read properties of undefined (reading 'json')
+[2023-03-31T18:35:46.798] [ERROR] default - Error al actualizar producto Error: Error: Error al actualizar: no se encontró el id 642751878
+[2023-03-31T18:37:29.058] [ERROR] default - Error al actualizar producto Error: Error: Error al actualizar: no se encontró el id 642751878
+[2023-03-31T18:42:16.764] [ERROR] default - Error al eliminar producto Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-31T18:43:32.835] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-31T21:28:51.962] [ERROR] default - Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "642773" (type number) at path "_id" for model "carritos"
+    at getOneCart (file:///C:/Users/smpos/OneDrive/Escritorio/BackEndEntregaFinal/src/services/cartServices.js:26:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getProductsofCartController (file:///C:/Users/smpos/OneDrive/Escritorio/BackEndEntregaFinal/src/controllers/cartController.js:53:29)
+[2023-03-31T21:48:55.776] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T21:50:39.435] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T21:55:25.953] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T21:57:07.601] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-03-31T21:57:48.608] [ERROR] default - Error al guardar producto en el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "{ id: '642773f9b055c7734b36ea9c' }" (type Object) at path "_id" for model "carritos"
+[2023-03-31T22:24:32.871] [ERROR] default - Error al actualizar producto TypeError: Cannot read properties of undefined (reading 'push')
+[2023-03-31T22:27:59.819] [ERROR] default - Error al actualizar producto ReferenceError: result is not defined
+[2023-03-31T22:29:13.333] [ERROR] default - Error al actualizar producto ReferenceError: result is not defined
+[2023-03-31T22:45:00.987] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T22:45:51.102] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T22:46:38.021] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T22:46:49.481] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-03-31T23:15:21.433] [ERROR] default - Error al eliminar todos los carritos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-31T23:19:46.225] [ERROR] default - Error al eliminar el producto TypeError: Cannot read properties of undefined (reading 'products')

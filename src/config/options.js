@@ -21,9 +21,7 @@ export const options = {
     DBTYPE: process.env.DBTYPE || "mongo",
   },
   mongo: {
-    url: "mongodb+srv://smposse:coderMongo2022@cluster0.94d5car.mongodb.net/ecommerceDB?retryWrites=true&w=majority",
-    urlTesting:
-      "mongodb+srv://smposse:coderMongo2022@cluster0.94d5car.mongodb.net/testingDB?retryWrites=true&w=majority",
+    url: "mongodb+srv://smposse23:hotdog2023@cluster0.qfa6yph.mongodb.net/ecommerce?retryWrites=true&w=majority",
   },
   sqliteDb: {
     client: "sqlite3",

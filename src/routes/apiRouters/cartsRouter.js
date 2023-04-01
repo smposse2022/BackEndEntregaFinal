@@ -6,11 +6,13 @@ const cartsRouter = express.Router();
 
 cartsRouter.get("/", CartsController.getCartsController);
 
+cartsRouter.get("/:id", CartsController.getOneCartController);
+
 cartsRouter.post("/", CartsController.createCartController);
 
 cartsRouter.delete("/:id", CartsController.deleteCartController);
 
-cartsRouter.get("/:id/productos", CartsController.getProductsofCartController);
+cartsRouter.delete("/", CartsController.deleteAllCartsController);
 
 cartsRouter.post("/:id/productos", CartsController.addProductToCartController);
 

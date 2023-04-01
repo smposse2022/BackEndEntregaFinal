@@ -32,7 +32,6 @@ export const addProductController = async (req, res) => {
 export const getOneProductController = async (req, res) => {
   try {
     const product = await getOneProduct(req.params.id);
-    console.log(req.params.id);
     res.status(200).json({ Product: product });
   } catch (error) {
     logger.error(`Error al buscar el producto ${error}`);
@@ -43,7 +42,7 @@ export const getOneProductController = async (req, res) => {
 export const updateProductController = async (req, res) => {
   try {
     logger.info("Acceso a actualizar filtrado por id");
-    const result = await updateProduct(req.body, parseInt(req.params.id));
+    const result = await updateProduct(req.body, req.params.id);
     res.status(200).json({ message: result });
   } catch (error) {
     logger.error(`Error al actualizar producto ${error}`);

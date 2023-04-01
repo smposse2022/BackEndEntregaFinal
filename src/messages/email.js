@@ -2,8 +2,8 @@ import { createTransport } from "nodemailer";
 
 // Nodemailer - Credenciales del Admin
 
-export const mailAdmin = "smposse@gmail.com";
-const passAdmin = "ngnusqmuhxkswwjp"; // Contraseña para conectar a Google: ngnusqmuhxkswwjp
+export const mailAdmin = "smposse23@gmail.com";
+const passAdmin = "pmjfeamruzssnibp"; // Contraseña para conectar a Google: pmjfeamruzssnibp
 
 // configuración del transporte de Nodemailer
 export const transporterEmail = createTransport({

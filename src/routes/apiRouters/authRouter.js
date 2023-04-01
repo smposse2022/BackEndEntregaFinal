@@ -88,8 +88,12 @@ passport.use(
           subject: "Nuevo Registro",
           html: emailTemplate,
         };
-        transporterEmail.sendMail(mailOptions);
-        logger.info(`El mail fue enviado correctamente`);
+        try {
+          transporterEmail.sendMail(mailOptions);
+          logger.info(`El mail fue enviado correctamente`);
+        } catch (error) {
+          logger.error(`Hubo un error ${error}`);
+        }
         UserModel.create(newUser, (error, userCreated) => {
           if (error)
             return done(error, null, {
@@ -142,8 +146,13 @@ passport.use(
 const authRouter = express.Router();
 
 authRouter.get("/users", UserController.getUsersController);
+
+authRouter.put("/user/:id", UserController.updateUserController);
+
 authRouter.delete("/user/:id", UserController.deleteUserController);
+
 authRouter.delete("/users", UserController.deleteAllUsersController);
+
 authRouter.get("/info", UserController.getInfoController);
 
 // Ruta info Compression
@@ -175,13 +184,13 @@ authRouter.post(
 );
 
 //ruta de logout con passport
-authRouter.get("/logout", (req, res) => {
+authRouter.post("/logout", (req, res) => {
   logger.info("Desloguear");
   req.logout((err) => {
     if (err) return res.send("hubo un error al cerrar sesion");
     req.session.destroy();
-    logger.info("Desloguear y redirigir a home");
-    res.redirect("/api/views");
+    logger.info("Sesión finalizada");
+    res.json(`Sesión finalizada`);
   });
 });
 

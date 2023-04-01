@@ -42,3 +42,11 @@ export const deleteCart = async (id) => {
     throw new Error(error);
   }
 };
+
+export const deleteAllCarts = async () => {
+  try {
+    return await CartDaoContainer.deleteAll();
+  } catch (error) {
+    throw new Error(error);
+  }
+};

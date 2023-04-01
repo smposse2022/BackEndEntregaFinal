@@ -27,7 +27,7 @@ app.use(
     //definimos el session store
     store: MongoStore.create({
       mongoUrl:
-        "mongodb+srv://smposse:coderMongo2022@cluster0.94d5car.mongodb.net/ecommerceDB?retryWrites=true&w=majority",
+        "mongodb+srv://smposse23:hotdog2023@cluster0.qfa6yph.mongodb.net/ecommerce?retryWrites=true&w=majority",
     }),
     secret: "claveSecreta",
     resave: false,
